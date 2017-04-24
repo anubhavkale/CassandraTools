@@ -7,7 +7,7 @@ import java.util.Set;
 // This is coded in Java so that its possible to hook up custom alerting to backup / restore. 
 // /mnt/cassandra holds the real data, and /datadisks/disk1 is the disk holding backups.
 // Backup: 
-// sudo java -cp /tmp/br.jar Program backup nodetool_user nodetool_password Customerbox-Prod /mnt/cassandra /datadisks/disk1 backup 3d 
+// sudo java -cp /tmp/br.jar Program backup nodetool_user nodetool_password /mnt/cassandra /datadisks/disk1 backup 3d 
 // Restore:
 // sudo java -cp /tmp/br.jar Program restore /mnt/cassandra /datadisks/disk1 backup 3d systemks true
 // sudo java -cp /tmp/br.jar Program restore /mnt/cassandra /datadisks/disk1 backup 3d nonsystemks
