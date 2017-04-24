@@ -1,7 +1,7 @@
 # CassandraTools
 Tools to operate on Cassandra at production scale
 
-BackupRestore
+Backup and Restore
 
 The BackupRestore folder contains tool to backup Cassandra data on a per node basis, and restore. The overall approach is as follows:
 
@@ -9,9 +9,9 @@ The BackupRestore folder contains tool to backup Cassandra data on a per node ba
 
 2] Use the program to backup to this disk periodically using Cron. The "copy" itself is performed using Linux rsync command.
 
-3] To restore, use the program's "restore" command on a per node basis. First restore the system keyspaces so you can take the live traffic in, and then resore the non-system (your data) keyspaces. More details are below.
+3] To restore, use the program's "restore" command on a per node basis. First restore the system keyspaces so you can take the live traffic, and then restore the non-system (your data) keyspaces. More details are below.
 
-To use this tool, build the code from within backuprestore and name the generated jar br.jar
+To use this tool, build the code from within backuprestore folder and name the generated jar br.jar
 
 Backup:
 
